@@ -1,0 +1,30 @@
+ /******************************************************************************
+ *
+ * Module: DC MOTOR
+ *
+ * File Name: DcMotor.h
+ *
+ * Description: header file for the ATmega32 DC MOTOR driver
+ *
+ * Author: Ahmed Abd El-Halim Ahmed
+ *
+ *******************************************************************************/
+
+
+#ifndef DCMOTOR_H_
+#define DCMOTOR_H_
+
+#include "std_types.h"
+
+#define DC_MOTOR_PORT		1
+#define DC_MOTOR_PIN1		0
+#define DC_MOTOR_PIN2		1
+
+typedef enum{STOP,CW,A_CW}DcMotor_State;
+
+void DcMotor_Init(void);
+void DcMotor_Rotate(DcMotor_State state,uint8 speed);
+
+
+
+#endif /* DCMOTOR_H_ */

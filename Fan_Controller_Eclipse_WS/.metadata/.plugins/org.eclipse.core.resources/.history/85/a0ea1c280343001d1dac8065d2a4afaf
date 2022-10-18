@@ -1,0 +1,25 @@
+ /******************************************************************************
+ *
+ * Module: PWM
+ *
+ * File Name: pwm.c
+ *
+ * Description: source file for the ATmega32 PWM driver
+ *
+ * Author: Ahmed Abd El-Halim Ahmed
+ *
+ *******************************************************************************/
+
+#include "pwm.h"
+#include <avr/io.h>
+#include "common_macros.h"
+
+
+void PWM_Timer0_Start(uint8 duty_cycle){
+	duty_cycle = (uint8)(((uint16)(256*duty_cycle))/100);
+	OCR0 = duty_cycle;
+	DDRB |= 1<<PB3;
+	TCCR0 = (1<<WGM01) | (WGM00) | (1<<COM01) | (1<<CS01);
+}
+
+

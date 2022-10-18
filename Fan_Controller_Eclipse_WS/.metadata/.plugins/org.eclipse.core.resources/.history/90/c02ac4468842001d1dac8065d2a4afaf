@@ -1,0 +1,30 @@
+ /******************************************************************************
+ *
+ * Module: DC MOTOR
+ *
+ * File Name: DcMotor.c
+ *
+ * Description: source file for the ATmega32 DC MOTOR driver
+ *
+ * Author: Ahmed Abd El-Halim Ahmed
+ *
+ *******************************************************************************/
+
+
+#include <gpio.h>
+#include "common_macros.h"
+#include "DcMotor.h"
+
+void DcMotor_Init(){
+
+}
+void DcMotor_Rotate(DcMotor_State state,uint8 speed){
+
+}
+
+
+
+
+
+
+

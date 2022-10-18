@@ -1,0 +1,19 @@
+ /******************************************************************************
+ *
+ * Module: DC MOTOR
+ *
+ * File Name: dc_motor.h
+ *
+ * Description: header file for the ATmega32 DC MOTOR driver
+ *
+ * Author: Ahmed Abd El-Halim Ahmed
+ *
+ *******************************************************************************/
+
+
+#ifndef DC_MOTOR_H_
+#define DC_MOTOR_H_
+
+
+
+#endif /* DC_MOTOR_H_ */

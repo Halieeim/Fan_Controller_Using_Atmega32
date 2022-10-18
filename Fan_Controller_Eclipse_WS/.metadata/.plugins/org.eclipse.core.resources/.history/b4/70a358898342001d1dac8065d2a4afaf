@@ -1,0 +1,34 @@
+/******************************************************************************
+ *
+ * Module: ADC
+ *
+ * File Name: adc.h
+ *
+ * Description: header file for the ATmega32 ADC driver
+ *
+ * Author: Ahmed Abd El-Halim Ahmed
+ *
+ *******************************************************************************/
+
+
+#ifndef ADC_H_
+#define ADC_H_
+
+#include "std_types.h"
+
+typedef uint8 ADC_ReferenceVolatge;
+typedef uint8 ADC_Prescaler;
+
+
+typedef struct{
+	ADC_ReferenceVolatge ref_volt;
+	ADC_Prescaler prescaler;
+
+}ADC_ConfigType;
+
+void ADC_init(const ADC_ConfigType * Config_Ptr)
+uint16 ADC_readChannel(uint8 ch_num);
+
+
+
+#endif /* ADC_H_ */
